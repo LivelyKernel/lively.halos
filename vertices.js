@@ -322,7 +322,6 @@ export class SvgStyleHalo extends Path {
   relayout() {
     let target = this.target;
     this.borderWidth = target.borderWidth || 2;
-    this.vertices = target.vertices;
     this.rotation = target.rotation;
     this.globalPosition = target.globalPosition;
     if (!target.borderWidth) this.moveBy(pt(-1, -1));
