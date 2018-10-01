@@ -23,7 +23,8 @@ class AxisHalo extends Morph {
   constructor({halo, targetAxis}) {
     super({fill: Color.transparent,
       halo, targetAxis,
-      container: halo.container});
+      container: halo.container,
+      acceptsDrops: false});
     this.initialize();
   }
 
